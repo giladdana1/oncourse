@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '~> 1.0.17'
+
 gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
@@ -7,6 +9,7 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 gem 'mysql2', :group => :production
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -24,7 +27,8 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+#  gem 'bcrypt-ruby', '~> 3.0.0' 
+  gem 'bcrypt-ruby', '~> 3.0.1', :platform => 'ruby'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
