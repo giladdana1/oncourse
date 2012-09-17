@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class CourseTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "should not save record witout title" do
+   course = Course.new
+   assert course.errors[:title].include? "can't be blank"
+  end
 end
+ 
